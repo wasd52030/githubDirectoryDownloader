@@ -2,7 +2,7 @@
 
 一個用來下載**github**資料夾的小工具，以**powershell**撰寫
 
-- 版本要求: **powershell7$\uparrow$**
+- 版本要求: **powershell7**$\uparrow$
 - 目前只支援下載資料夾，單檔下載可以直接從github網頁上面獲得
 
 ## 安裝
