@@ -9,23 +9,25 @@
 
 - 安裝powershell 7(已安裝可以跳過)
 
-- clone本專案，並放到你喜歡的地方
+- 打開powershell 7(pwsh)
 
-    ```
-    git clone https://github.com/wasd52030/githubDirectoryDownloader
-    ```
+    - clone本專案，並放到你喜歡的地方
 
-- 開啟user profile(編輯器自選)
+        ```
+        git clone https://github.com/wasd52030/githubDirectoryDownloader
+        ```
 
-    ```
-    notepad $PROFILE
-    ```
-    
-- 載入指令碼
+    - 開啟user profile(編輯器自選)
 
-  ```
-  Import-Module -Name "yourpath\githubDirectoryDownloader\Invoke-GithubDiectory.ps1"
-  ```
+        ```
+        notepad $PROFILE
+        ```
+
+    - 載入指令碼
+
+      ```
+      Import-Module -Name "yourpath\githubDirectoryDownloader\Invoke-GithubDiectory.ps1"
+      ```
 
  ## 使用
 指令格式如下，**githuburl**為你想下載的github repository網址(資料夾網址亦可)
