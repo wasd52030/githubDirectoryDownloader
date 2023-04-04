@@ -58,10 +58,8 @@ function iterDirectory($repoInfo) {
             # Invoke-WebRequest -Uri $dwUrl -OutFile $path
             Start-ThreadJob -ScriptBlock {
                 param($url, $path)
-                Write-Host "$($path) download start"
-                Invoke-WebRequest -Uri $url -OutFile $path | Out-Null
-                Write-Host "$($path) download end"
-            } -StreamingHost $Host -ArgumentList $dwUrl, $path
+                Invoke-WebRequest -Uri $url -OutFile $path
+            } -StreamingHost $Host -ArgumentList $dwUrl, $path | Out-Null
         }
     }
 }
@@ -76,8 +74,6 @@ function Invoke-GithubDirectory($url) {
         }
     }
 }
-
-Invoke-GithubDirectory
 
 # sample
 # Invoke-GithubDirectory -url "https://github.com/wasd52030/pose-monitor"
